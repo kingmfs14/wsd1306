@@ -5,6 +5,7 @@
 #09C = Blue Teal
 #006 = Navy Blue
 #C96 = Sandy Tan
+#000 = Black
 
 ----------------Color Codes--------*/
 
@@ -22,6 +23,18 @@ section {
 	margin-bottom: 20px;
 	clear: both;
 	-moz-column-count: 3;
+}
+
+header {
+	margin-left: 536px;
+}
+
+aside {
+	background-color: #C96;
+	border-radius: 10px;
+	width: 263px;
+	float: right;
+	margin: 20px 0;
 }
 
 /*-------Navigation Elements--------*/
@@ -62,6 +75,15 @@ nav ul li a:hover, a:active, a:focus {
 	border-bottom-right-radius: 15px;	
 }
 
+article p {
+	text-align: justify;
+}
+
+footer p {
+	text-align: right;
+	font-style: italic;
+}
+
 #footer {
 	clear: both;
 }
@@ -76,8 +98,16 @@ h1 a{
 }
 
 h2, h3 {
-	color: #09C;
 	font-family: 'Wallpoet', cursive;
+}
+
+h2 {
+	color: #09C;
+}
+
+h3 {
+	color: #000;
+	margin-left: 20px;
 }
 
 /*-------Gallery Elements------------*/
@@ -96,7 +126,7 @@ h2, h3 {
 #gallery ul li {
 	float: left;
 	display: block;
-	margin: 10px 20px 10px 0px;
+	margin: 10px 20px 5px 0px;
 }
 
 #gallery img {
