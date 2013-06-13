@@ -1,17 +1,15 @@
 /*--------------Color Codes----------
 
-#FFF = White
-#666 = Dark Gray
 #09C = Blue Teal
 #006 = Navy Blue
 #C96 = Sandy Tan
-#000 = Black
 
 ----------------Color Codes--------*/
 
 /*-------Sections------------------*/
 
 body {
+	background-color: #FFF;
 	color: #666;
 	font: Verdana, Arial, Helvetica, sans-serif 14px/1.5;
 	margin: 0 auto;
@@ -37,35 +35,8 @@ aside {
 	margin: 20px 0;
 }
 
-/*-------Navigation Elements--------*/
-
-nav ul {
-	margin: 0;
-	list-style-type: none;
-	padding: 0;
-}
-
-nav ul li {
-	float: right;
-	display: block;
-	margin: 0 15px 0 0;
-}
-
-nav ul li a, a:visited {
-	text-align: center;	
-	text-decoration: none;
-	height: 26px;
-	line-height: 26px;
-	color: #FFF;
-	padding: 5px;
-}
-
-nav ul li a:hover, a:active, a:focus {
-	background-color: #FFF;
-	color: #006;
-}
-
 /*-------Specific Elements------------*/
+
 
 #header {
 	background-color: #006;
@@ -85,7 +56,23 @@ footer p {
 }
 
 #footer {
+	text-align: center;
 	clear: both;
+	font-size: 12px;	
+}
+
+#footer ul {
+	list-style-type: none;
+	float: right;
+}
+
+#footer ul li {
+	display: inline;
+	margin: 0 45px 0 0;
+}
+
+#footer a {
+	font-weight: bold;
 }
 
 /*-------Elements---------------------*/
@@ -110,6 +97,40 @@ h3 {
 	margin-left: 20px;
 }
 
+a {
+	text-decoration: none;
+	color: #960;
+}
+
+/*-------Navigation Elements--------*/
+
+nav ul {
+	margin: 0;
+	list-style-type: none;
+	padding: 0;
+}
+
+nav ul li {
+	float: right;
+	display: block;
+	margin: 0 15px 0 0;
+}
+
+nav ul li a, a:visited {
+	text-align: center;	
+	height: 26px;
+	line-height: 26px;
+	color: #FFF;
+	padding: 5px;
+}
+
+nav ul li a:hover, a:active, a:focus {
+	background-color: #FFF;
+	color: #006;
+}
+
+
+
 /*-------Gallery Elements------------*/
 
 #gallery {
@@ -132,6 +153,4 @@ h3 {
 #gallery img {
 	border: 1px solid #000;
 }
-
-
 
