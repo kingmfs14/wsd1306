@@ -11,32 +11,44 @@
 body {
 	background-color: #FFF;
 	color: #666;
-	font: 14px/1.5 Verdana, Arial, Helvetica, sans-serif;
+	font: 87.5%/1.5 Verdana, Arial, Helvetica, sans-serif; /* 14px/16px */
 	margin: 0 auto;
-	width: 790px;
+	max-width: 790px;
+}
+
+nav {
+	width: 75.949367088608%; /* 600px/790px */
+	float: right;
 }
 
 section {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 2.53164556962%; /* 20px/790px */
+	margin-bottom: 2.53164556962%; /* 20px/790px */
 	clear: both;
 	-moz-column-count: 3;
+	padding: 0 1.2658227848110%;
 }
 
 header {
-	margin-left: 536px;
+	margin-left: 67.848101265823%; /* 536px/790px */
 }
 
 aside {
 	background-color: #C96;
 	border-radius: 10px;
-	width: 253px;
+	width: 32.025316455696%; /* 253px/790px */
 	float: right;
-	margin: 10px 0;
+	margin: 1.2658227848110% 0; /* 10px/790px */
 }
 
 /*-------Specific Elements------------*/
 
+
+#wrapper {
+	width: 100%; /* 790px */
+	margin: 0 auto;	
+	overflow: hidden;
+}
 
 #header {
 	background-image: url(../images/bg.jpg);
@@ -49,6 +61,7 @@ aside {
 
 article p {
 	text-align: justify;
+	padding: 0 1.2658227848110%;
 }
 
 footer p {
@@ -57,20 +70,19 @@ footer p {
 }
 
 #footer {
-	padding-top: 10px;
-	text-align: center;
 	clear: both;
-	font-size: 12px;	
+	padding-top: 1.26582278481%; /* 10px/790px */
+	text-align: center;
+	font-size: 71.428571428571%; /* 10px/14px */	
 }
 
 #footer ul {
 	list-style-type: none;
-	float: right;
 }
 
 #footer ul li {
 	display: inline;
-	margin: 0 45px 0 0;
+	margin: 0 3.79746835443% 0 0; /* 30px/14px */
 }
 
 #footer a {
@@ -80,7 +92,7 @@ footer p {
 /*-------Elements---------------------*/
 
 h1 a{
-	margin-left: 20px;
+	margin-left: 2.53164556962%; /* 20px/790px */
 	color: #C96;
 	font-family:'Trade Winds', cursive;
 	text-decoration: none;
@@ -97,7 +109,7 @@ h2 {
 
 h3 {
 	color: #000;
-	margin-left: 20px;
+	margin-left: 2.53164556962%; /* 20px/790px */
 }
 
 a {
@@ -121,15 +133,15 @@ nav ul {
 nav ul li {
 	float: right;
 	display: block;
-	margin: 0 15px 0 0;
+	margin: 0 1.898734177215% 0 0; /* 15px/790px */
 }
 
 nav ul li a, a:visited {
 	text-align: center;	
-	height: 26px;
-	line-height: 26px;
+	height: 3.291139240506%; /* 26px/790px */
+	line-height: 3.291139240506%; /* 26px/790px */
 	color: #FFF;
-	padding: 5px;
+	padding: 2px; /*2px*/
 }
 
 nav ul li a:hover, a:active, a:focus {
@@ -140,7 +152,7 @@ nav ul li a:hover, a:active, a:focus {
 /*-------Gallery Elements------------*/
 
 #gallery {
-	width: 526px;
+	width: 66.582278481013%; /* 526px/790px */
 	float: left;
 }
 
@@ -153,7 +165,7 @@ nav ul li a:hover, a:active, a:focus {
 #gallery ul li {
 	float: left;
 	display: block;
-	margin: 10px 20px 0 0;
+	margin: 1.26582278481% 2.53164556962% 0 0; /* 10px/790px 20px/790px 0 0 */
 }	
 
 #gallery img {
@@ -163,13 +175,13 @@ nav ul li a:hover, a:active, a:focus {
 /*-------Button Elements------------*/
 
 .button {
-	width: 426px;
+	width: 90.494296577947%; /* 476px/526px */
 	display: inline-block;
 	outline: none;
 	cursor: pointer;
 	text-align: center;
 	text-decoration: none;
-	font: 14px/100% Arial, Helvetica, sans-serif;
+	font: 100%/1 Arial, Helvetica, sans-serif;
 	padding: .5em 2em .55em;
 	text-shadow: 0 1px 1px rgba(0,0,0,.3);
 	-webkit-border-radius: .5em; 
@@ -194,8 +206,9 @@ nav ul li a:hover, a:active, a:focus {
 }
 .button:active {
 	position: relative;
-	top: 1px;
+	top: 0.190114068441%; /* 1px/526px */
 	background: -webkit-gradient(linear, left top, left bottom, from(#006), to(#09C));
 	background: -moz-linear-gradient(top,  #006,  #09C);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#006', endColorstr='#09C');
 }
+
