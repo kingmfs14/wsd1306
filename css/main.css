@@ -26,7 +26,7 @@ section {
 	margin-bottom: 2.53164556962%; /* 20px/790px */
 	clear: both;
 	-moz-column-count: 3;
-	padding: 0 1.2658227848110%;
+	padding: 0 1.898734177215%; /* 15px/790px */
 }
 
 header {
@@ -52,6 +52,7 @@ aside {
 
 #header {
 	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
 	background-color: #006;
 	overflow: hidden;
 	margin: 0;
@@ -61,7 +62,7 @@ aside {
 
 article p {
 	text-align: justify;
-	padding: 0 1.2658227848110%;
+	padding: 0 1.898734177215%;
 }
 
 footer p {
@@ -164,7 +165,6 @@ nav ul li a:hover, a:active, a:focus {
 
 #gallery ul li {
 	float: left;
-	display: block;
 	margin: 1.26582278481% 2.53164556962% 0 0; /* 10px/790px 20px/790px 0 0 */
 }	
 
@@ -175,13 +175,15 @@ nav ul li a:hover, a:active, a:focus {
 /*-------Button Elements------------*/
 
 .button {
-	width: 90.494296577947%; /* 476px/526px */
-	display: inline-block;
+	width: 63.291139240506%; /* 500px/790px */
+	float: left;
+	display: block;
 	outline: none;
 	cursor: pointer;
 	text-align: center;
 	text-decoration: none;
 	font: 100%/1 Arial, Helvetica, sans-serif;
+	margin: 1.898734177215% 0; /* 15px/790px */
 	padding: .5em 2em .55em;
 	text-shadow: 0 1px 1px rgba(0,0,0,.3);
 	-webkit-border-radius: .5em; 
@@ -212,3 +214,32 @@ nav ul li a:hover, a:active, a:focus {
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#006', endColorstr='#09C');
 }
 
+/*--------Media Queries--------------*/
+
+	/* Tablet portrait size to standard 790	(devices and browsers) */
+	@media screen and (min-width: 768px) and (max-width: 789px) {
+		#wrapper {background-color: #509cff;}
+		#gallery {float: none; overflow: hidden; width: 90.5%; padding: 1% 9.5%;}
+		header {margin-left: 3.164556962025%; /* 536px/790px */}
+		aside {display: none;}
+	}
+	
+	/* Mobile Landscape size to Tablet portrait size (devices and browsers) */
+	@media screen and (min-width: 614px) and (max-width: 767px) {
+		#wrapper {background-color: #ff7743;}
+		#gallery {float: none; overflow: hidden; width: 90.5%; padding: 1% 9.5%;}
+		header {margin-left: 3.164556962025%; /* 536px/790px */}
+		aside, #footer #copy, #footer #plug {display: none;}
+		#footer {text-align: center;}
+	}
+
+	/* Mobile Portrait size to Mobile Landscape size (devices and browsers) */
+	@media only screen and (max-width: 613px) {
+		#wrapper {background-color: #d593ff;}
+		nav, nav ul li {float:none; margin-left: 5.063291139241%;} /*30px/790px*/
+		section {-moz-column-count: 1;}
+		#gallery {float: none; overflow: hidden; width: 90.5%; padding: 1% 9.5%;}
+		article, #footer #copy, #footer #plug {display: none;}
+		aside {overflow: hidden; float: none; margin-left: 9.5%;}
+		#footer {text-align: center;}
+	}
