@@ -142,7 +142,7 @@ nav ul li a, a:visited {
 	height: 3.291139240506%; /* 26px/790px */
 	line-height: 3.291139240506%; /* 26px/790px */
 	color: #FFF;
-	padding: 2px; /*2px*/
+	padding: 3px; /*3px*/
 }
 
 nav ul li a:hover, a:active, a:focus {
@@ -169,6 +169,7 @@ nav ul li a:hover, a:active, a:focus {
 }	
 
 #gallery img {
+	width: 99.585062240664%;
 	border: 1px solid #000;
 }
 
@@ -218,7 +219,6 @@ nav ul li a:hover, a:active, a:focus {
 
 	/* Tablet portrait size to standard 790	(devices and browsers) */
 	@media screen and (min-width: 768px) and (max-width: 789px) {
-		#wrapper {background-color: #509cff;}
 		#gallery {float: none; overflow: hidden; width: 90.5%; padding: 1% 9.5%;}
 		header {margin-left: 3.164556962025%; /* 536px/790px */}
 		aside {display: none;}
@@ -226,7 +226,6 @@ nav ul li a:hover, a:active, a:focus {
 	
 	/* Mobile Landscape size to Tablet portrait size (devices and browsers) */
 	@media screen and (min-width: 614px) and (max-width: 767px) {
-		#wrapper {background-color: #ff7743;}
 		#gallery {float: none; overflow: hidden; width: 90.5%; padding: 1% 9.5%;}
 		header {margin-left: 3.164556962025%; /* 536px/790px */}
 		aside, #footer #copy, #footer #plug {display: none;}
@@ -235,7 +234,6 @@ nav ul li a:hover, a:active, a:focus {
 
 	/* Mobile Portrait size to Mobile Landscape size (devices and browsers) */
 	@media only screen and (max-width: 613px) {
-		#wrapper {background-color: #d593ff;}
 		nav, nav ul li {float:none; margin-left: 5.063291139241%;} /*30px/790px*/
 		section {-moz-column-count: 1;}
 		#gallery {float: none; overflow: hidden; width: 90.5%; padding: 1% 9.5%;}
