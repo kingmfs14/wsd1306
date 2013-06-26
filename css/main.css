@@ -11,7 +11,7 @@
 body {
 	background-color: #FFF;
 	color: #666;
-	font: 87.5%/1.5 Verdana, Arial, Helvetica, sans-serif; /* 14px/16px */
+	font: .87em/1.5 Verdana, Arial, Helvetica, sans-serif; /* 14px/16px */
 	margin: 0 auto;
 	max-width: 790px;
 }
@@ -74,7 +74,7 @@ footer p {
 	clear: both;
 	padding-top: 1.26582278481%; /* 10px/790px */
 	text-align: center;
-	font-size: 71.428571428571%; /* 10px/14px */	
+	font-size: .71em; /* 10px/14px */	
 }
 
 #footer ul {
@@ -238,6 +238,6 @@ nav ul li a:hover, a:active, a:focus {
 		section {-moz-column-count: 1;}
 		#gallery {float: none; overflow: hidden; width: 90.5%; padding: 1% 9.5%;}
 		article, #footer #copy, #footer #plug {display: none;}
-		aside {overflow: hidden; float: none; margin-left: 9.5%;}
+		aside {overflow: hidden; float: none; margin-left: 9.5%; width: 81%}
 		#footer {text-align: center;}
 	}
