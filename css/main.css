@@ -245,6 +245,42 @@ td {
 	color: #ffc;
 }
 
+/*-------Form Elements------------*/
+
+#form_wrap {
+	clear: both;
+	width: 90%;
+	margin-left: 5%;
+	padding-top: 2.5%;
+}
+
+#personal_info {
+	float: left;
+	width: 45%;
+}
+
+#contact_info {
+	float: right;
+	width: 45%;
+}
+
+.text input {
+	width: 90%;
+}
+
+.radio input {
+	margin-left: 10%;
+}
+
+input:focus {
+	background-color: #ffc;
+}
+
+#input {
+	clear: both;
+}
+
+
 
 /*--------Media Queries--------------*/
 
@@ -270,5 +306,6 @@ td {
 		#gallery {float: none; overflow: hidden; width: 90.5%; padding: 1% 9.5%;}
 		article, #footer #copy, #footer #plug {display: none;}
 		aside {overflow: hidden; float: none; margin-left: 9.5%; width: 81%}
+		#personal_info, #contact_info {float: none; width: 95%;}
 		#footer {text-align: center;}
 	}
