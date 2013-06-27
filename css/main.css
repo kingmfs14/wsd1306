@@ -74,7 +74,7 @@ footer p {
 	clear: both;
 	padding-top: 1.26582278481%; /* 10px/790px */
 	text-align: center;
-	font-size: .71em; /* 10px/14px */	
+	font-size: .71em; /* 10px*/	
 }
 
 #footer ul {
@@ -214,6 +214,37 @@ nav ul li a:hover, a:active, a:focus {
 	background: -moz-linear-gradient(top,  #006,  #09C);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#006', endColorstr='#09C');
 }
+
+/*-------Table Elements------------*/
+
+#table {
+	float: left;
+}
+
+table {
+	margin-left: 5.06329113924%; /*40px/790px*/
+	border-collapse: collapse;
+	border: solid 1px #000;
+}
+
+th {
+	text-align: left;
+	padding: 0.2em 0.5em;
+	background: -webkit-gradient(linear, left top, left bottom, from(#006), to(#09C));
+	background: -moz-linear-gradient(top,  #006,  #09C);
+	color: #fff;
+}
+
+td {
+	border: solid 1px #000;
+	text-align: center;
+}
+
+.odd {
+	background: #09C;
+	color: #ffc;
+}
+
 
 /*--------Media Queries--------------*/
 
